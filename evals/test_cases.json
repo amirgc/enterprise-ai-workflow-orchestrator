@@ -1,0 +1,51 @@
+[
+    {
+        "id": "tc_001",
+        "input": "Onboard ABC Supplies as a new vendor. They provide office equipment. Payment terms are Net 30.",
+        "expected": {
+            "category": "new_vendor",
+            "vendor_name": "ABC Supplies",
+            "vendor_type": "office equipment",
+            "payment_terms": "Net 30"
+        }
+    },
+    {
+        "id": "tc_002",
+        "input": "Update the email address for Globex Corporation to contact@globex.com",
+        "expected": {
+            "category": "update_vendor",
+            "vendor_name": "Globex Corporation",
+            "contact_email": "contact@globex.com"
+        }
+    },
+    {
+        "id": "tc_003",
+        "input": "Check if Acme IT Solutions from Germany has the required SOC 2 certification",
+        "expected": {
+            "category": "compliance_check",
+            "vendor_name": "Acme IT Solutions",
+            "country": "Germany",
+            "vendor_type": "IT"
+        }
+    },
+    {
+        "id": "tc_004",
+        "input": "Change payment terms for FastShip Logistics to Net 60",
+        "expected": {
+            "category": "payment_change",
+            "vendor_name": "FastShip Logistics",
+            "payment_terms": "Net 60"
+        }
+    },
+    {
+        "id": "tc_005",
+        "input": "Onboard TechSecure from Iran as a software vendor with Net 30 terms. Contact: info@techsecure.ir",
+        "expected": {
+            "category": "new_vendor",
+            "vendor_name": "TechSecure",
+            "country": "Iran",
+            "vendor_type": "software",
+            "compliance_flags": ["sanctioned_country", "requires_security_assessment"]
+        }
+    }
+]

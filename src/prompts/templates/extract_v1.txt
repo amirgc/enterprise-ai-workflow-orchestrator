@@ -1,0 +1,19 @@
+Extract vendor information from the following request.
+
+Request: {request_text}
+
+Extract these fields (use null for any field not mentioned):
+- vendor_name: The name of the vendor/company
+- vendor_type: What they supply or provide
+- payment_terms: Payment terms (e.g., Net 30, Net 60)
+- contact_email: Contact email address
+- country: Country of operation
+
+Respond with ONLY a JSON object in this exact format:
+{
+    "vendor_name": "<string or null>",
+    "vendor_type": "<string or null>",
+    "payment_terms": "<string or null>",
+    "contact_email": "<string or null>",
+    "country": "<string or null>"
+}

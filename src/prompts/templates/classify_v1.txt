@@ -1,0 +1,15 @@
+Classify the following vendor request into exactly one category.
+
+Categories:
+- new_vendor: Onboarding a new vendor/supplier
+- update_vendor: Updating an existing vendor's information
+- compliance_check: Checking vendor compliance or certification
+- payment_change: Changing payment terms or banking details
+
+Request: {request_text}
+
+Respond with ONLY a JSON object in this exact format:
+{
+    "category": "<one of the categories above>",
+    "confidence": <number between 0.0 and 1.0>
+}

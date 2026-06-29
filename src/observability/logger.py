@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 
 # Cost per million tokens (approximate, varies by model)
 COST_PER_MILLION = {
-    "claude-sonnet-4-20250514": {"input": 3.00, "output": 15.00},
+    "claude-sonnet-4-6": {"input": 3.00, "output": 15.00},
     "gpt-4o": {"input": 2.50, "output": 10.00},
 }
 

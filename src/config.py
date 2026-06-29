@@ -43,7 +43,7 @@ class Settings(BaseSettings):
 
     # Provider settings
     default_provider: Provider = Provider.CLAUDE
-    claude_model: str = "claude-sonnet-4-20250514"
+    claude_model: str = "claude-sonnet-4-6"
     openai_model: str = "gpt-4o"
 
     # App settings
